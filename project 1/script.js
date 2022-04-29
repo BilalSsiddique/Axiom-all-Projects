@@ -28,28 +28,52 @@ function showSuccess(input) {
 
 // Function to validate email
 
-function isvalidEmail(email){
+function checkEmail(element) {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase()
-    );
+    if (re.test(element.value.trim())) {
+        showSuccess(element);
+    }
+    else {
+        showError(element, `Please provide a valid email`)
+    }
 };
 
 //function to check if required field have data
-function checkRequired(array){
+function checkRequired(array) {
     array.forEach(element => {
-        if (element.value===''){
-            showError(element,`${capitalizeid(element)} is required`)
+        if (element.value === '') {
+            showError(element, `${capitalizeid(element)} is required`)
         }
-        else{
+        else {
             showSuccess(element)
         }
-        
+
     });
 }
 
 //function to capitalize the id of the id
-function capitalizeid(element){
-    return element.id.charAt(0).toUpperCase()+element.id.slice(1);
+function capitalizeid(element) {
+    return element.id.charAt(0).toUpperCase() + element.id.slice(1);
+}
+//function to check length of username
+function checkLength(element, min, max) {
+    if (element.value.length < min) {
+        showError(element, `${capitalizeid(element)} needs to be atleast ${min} characters`);
+    }
+    else if (element.value.length > max) {
+        showError(element, `${capitalizeid(element)} needs to be less than ${max} characters`);
+    }
+    else {
+        showSuccess(element);
+    }
+}
+
+//function to check if password and confirm password are same
+function checkPasswordMatch(element, element2) {
+    if (element.value !== element2.value) {
+        showError(element2, "Passwords don't match")
+    }
+
 }
 
 //Event Listeners
@@ -57,5 +81,10 @@ function capitalizeid(element){
 form.addEventListener('submit', function (e) {
     // Stop page from relaoding on submit
     e.preventDefault();
-    checkRequired([username,email,password,password2])
+    checkRequired([username, email, password, password2]);
+    checkLength(username, 3, 10);
+    checkLength(password, 6, 30);
+    checkEmail(email);
+    checkPasswordMatch(password, password2)
+
 });
