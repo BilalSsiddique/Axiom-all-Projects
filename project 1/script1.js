@@ -28,34 +28,41 @@ function showSuccess(input) {
 
 // Function to validate email
 
-function isvalidEmail(email){
+function isvalidEmail(email) {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase()
     );
-};
-
-//function to check if required field have data
-function checkRequired(array){
-    array.forEach(element => {
-        if (element.value===''){
-            showError(element,`${capitalizeid(element)} is required`)
-        }
-        else{
-            showSuccess(element)
-        }
-        
-    });
 }
-
-//function to capitalize the id of the id
-function capitalizeid(element){
-    return element.id.charAt(0).toUpperCase()+element.id.slice(1);
-}
-
 //Event Listeners
 // Create Event listener for submit button
 form.addEventListener('submit', function (e) {
     // Stop page from relaoding on submit
     e.preventDefault();
-    checkRequired([username,email,password,password2])
+    if (username.value === '') {
+        showError(username, 'Username is required')
+    }
+    else {
+        showSuccess(username)
+    }
+    if (email.value === '') {
+        showError(email, 'Email is required')
+    }
+    else if (!isvalidEmail(email.value)) {
+        showError(email, 'Email is invalid')
+    }
+    else {
+        showSuccess(email)
+    }
+    if (password.value === '') {
+        showError(password, 'Password is required')
+    }
+    else {
+        showSuccess(password)
+    }
+    if (password2.value === '') {
+        showError(password2, 'Confirm Password is required')
+    }
+    else {
+        showSuccess(password2)
+    }
 });
