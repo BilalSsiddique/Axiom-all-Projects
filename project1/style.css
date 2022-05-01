@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: #dcdde1;
     font-family: 'Poppins',
         sans-serif;
     display: flex;
@@ -71,8 +71,8 @@ h2 {
     width: 100%;
     padding: 10px;
     font-weight: 600;
-    background-color: var(--success-color);
-    border: 2px solid var(--success-color);
+    background-color: #0652DD;
+    border: 2px solid #0652DD;
     border-radius: 10px;
     color: white;
     margin-top: 20px;
@@ -107,4 +107,20 @@ h2 {
     .container {
         width: 300px;
     }
+}
+
+
+/* home */
+.home {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border: 2px solid grey;
+    text-align: center;
+    background: grey;
+    color: white;
+    /* height: px; */
+}
+
+a {
+    text-decoration: none;
 }
