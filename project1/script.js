@@ -38,14 +38,18 @@ function checkEmail(element) {
     }
 };
 
-//function to check if required field have data
-function checkRequired(array) {
+//function to check all required validations
+function checkvalidator(array) {
     array.forEach(element => {
         if (element.value === '') {
             showError(element, `${capitalizeid(element)} is required`)
+
         }
         else {
-            showSuccess(element)
+            checkLength(username, 3, 10);
+            checkEmail(email);
+            checkLength(password, 6, 30);
+            checkPasswordMatch(password, password2)
         }
 
     });
@@ -59,9 +63,11 @@ function capitalizeid(element) {
 function checkLength(element, min, max) {
     if (element.value.length < min) {
         showError(element, `${capitalizeid(element)} needs to be atleast ${min} characters`);
+
     }
     else if (element.value.length > max) {
         showError(element, `${capitalizeid(element)} needs to be less than ${max} characters`);
+
     }
     else {
         showSuccess(element);
@@ -73,6 +79,9 @@ function checkPasswordMatch(element, element2) {
     if (element.value !== element2.value) {
         showError(element2, "Passwords don't match")
     }
+    else {
+        showSuccess(element2)
+    }
 
 }
 
@@ -81,10 +90,8 @@ function checkPasswordMatch(element, element2) {
 form.addEventListener('submit', function (e) {
     // Stop page from relaoding on submit
     e.preventDefault();
-    checkRequired([username, email, password, password2]);
-    checkLength(username, 3, 10);
-    checkLength(password, 6, 30);
-    checkEmail(email);
-    checkPasswordMatch(password, password2)
+
+    checkvalidator([username, email, password, password2]);
+
 
 });
