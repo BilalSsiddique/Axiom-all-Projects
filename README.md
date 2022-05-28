@@ -1,5 +1,4 @@
 # PIAIC Axiom Projects
-All projects live at:https://all-axiomprojects.netlify.app/
 Project 01
 Sign Up Form
 Live at: https://all-axiomprojects.netlify.app/project1/index.html
