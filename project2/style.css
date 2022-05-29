@@ -19,27 +19,31 @@ body {
 
 .movie-container {
     margin: 20px 0;
-    
+
 
 }
 
 /* small screens */
 @media only screen and (max-width: 568px) {
     body {
-        background-color: #101e35;;
+        background-color: #101e35;
+        ;
     }
-    .movie-container{
+
+    .movie-container {
         place-items: center;
         place-content: center;
         flex-direction: column;
         display: flex;
     }
-    label{
+
+    label {
         margin-bottom: 8px;
         font-weight: 600;
     }
-    .legend{
-        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.9) ;
+
+    .legend {
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.9);
     }
 }
 
@@ -56,7 +60,8 @@ body {
     -webkit-appearance: none;
     font-weight: 700;
 }
-.movie-container select option{
+
+.movie-container select option {
     font-weight: 700;
 }
 
@@ -75,13 +80,14 @@ body {
     display: flex;
     place-items: center;
     place-content: center;
-    color: #274472;
+    color: #060e1e;
     font-weight: bold;
     font-size: 12px;
 }
 
 .seat.selected {
     background-color: aqua;
+    color: black;
 }
 
 .seat.occupied {
@@ -124,7 +130,7 @@ body {
     place-items: center;
     justify-content: center;
     margin: 0 10px;
-    
+
 }
 
 .legend li small {
