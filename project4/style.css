@@ -1,74 +1,144 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@100;300;400;600;700&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@100;300;400;600;700&display=swap');
+
+* {
     box-sizing: border-box;
     font-family: 'Lato',
-    sans-serif;
+        sans-serif;
     font-family: 'Poppins',
-    sans-serif;
+        sans-serif;
 }
 
-body{
+
+body {
     background-color: lightgray;
-    
+
+
+}
+
+.containerr {
     display: flex;
     flex-direction: column;
-    place-items:center ;
+    place-items: center;
     justify-content: center;
-    height: 100vh;
     margin: 0;
     padding: 20px;
+    height: 90vh;
+
 }
 
-h1{
-    color:darkgreen;
+
+
+h1 {
+    color: darkgreen;
+    font-weight: 600;
 }
-p{
+
+p {
     text-align: center;
 }
 
-.btn{
-    color:white;
+.btn {
     background-color: darkgreen;
+    color: white;
+    font-weight: 700;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 15px;
     padding: 5px 10px;
     border: none;
 
 }
-.currency{
-    padding: 40px 0;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;   
-}
-.currency select{
-    padding: 5px 5px;
-    font-size: 16px;
-    background: transparent;
-    border:1px solid gray;
-}
-.currency input{
-    border:0;
-    background: transparent;
-    font-size:24px;
-    text-align: right;
+
+.fa-retweet {
+    color: whitesmoke;
+    font-size: 1.2rem;
 }
 
-#swap-rates-container{
-    display: flex;
-    place-items: center;
-    align-items: center;
+.fa-gg-circle {
+    font-size: 1.9rem;
+
+}
+li a{
+    /* color: darkgreen  !important; */
+    font-weight: 600  !important;
+    font-family:sans-serif;
     
+}
+#navbarScroll{
+    margin-left: 60px;
+}
+
+.btn:hover {
+    color: white;
+    background-color: darkgreen;
+
+}
+
+.currency {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-.rate{
-    color:darkgreen;
+.currency select {
+    padding: 5px 5px;
     font-size: 16px;
-    padding: 0 10px;
+    background: transparent;
+    border: 1px solid gray;
 }
 
-select:focus,input:focus,button:focus{
+.currency input {
+    border: 0;
+    background: transparent;
+    font-size: 24px;
+    text-align: right;
+    font-weight: 600;
+}
+
+/* .currency .inp-2{
+    color: darkgreen;
+    
+} */
+
+#swap-rates-container {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.rate {
+    color: black;
+    font-size: 16px;
+    padding: 0px 35px;
+    font-weight: 600;
+
+}
+
+select:focus,
+input:focus,
+button:focus {
     outline: 0;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 750px) {
+
+    .currency {
+        flex-direction: column;
+
+    }
+
+    .currency input {
+        flex-direction: column;
+        margin-top: 20px;
+
+
+
+    }
+
 }
