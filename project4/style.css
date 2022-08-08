@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@100;300;400;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Lato',
+    sans-serif;
+    font-family: 'Poppins',
+    sans-serif;
+}
+
+body{
+    background-color: lightgray;
+    
+    display: flex;
+    flex-direction: column;
+    place-items:center ;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+h1{
+    color:darkgreen;
+}
+p{
+    text-align: center;
+}
+
+.btn{
+    color:white;
+    background-color: darkgreen;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: none;
+
+}
+.currency{
+    padding: 40px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+.currency select{
+    padding: 5px 5px;
+    font-size: 16px;
+    background: transparent;
+    border:1px solid gray;
+}
+.currency input{
+    border:0;
+    background: transparent;
+    font-size:24px;
+    text-align: right;
+}
+
+#swap-rates-container{
+    display: flex;
+    place-items: center;
+    align-items: center;
+    
+    justify-content: space-between;
+}
+
+.rate{
+    color:darkgreen;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+select:focus,input:focus,button:focus{
+    outline: 0;
+}
