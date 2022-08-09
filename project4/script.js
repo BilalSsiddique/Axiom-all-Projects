@@ -25,20 +25,20 @@ function calculate(){
     // fetch(`https://v6.exchangerate-api.com/v6/ea0a619add01d672303229dc/pair/${currencyOnecode}/${currencyTwocode}`)
 
     // send request to ExchangeRate-API for conversion rates of currencyone
-    fetch(`https://v6.exchangerate-api.com/v6/ea0a619add01d672303229dc/pair/${currencyOnecode}/${currencyTwocode}`)
-    .then(res=> res.json())
-    .then(data=> {
+//     fetch(`https://v6.exchangerate-api.com/v6/ea0a619add01d672303229dc/pair/${currencyOnecode}/${currencyTwocode}`)
+//     .then(res=> res.json())
+//     .then(data=> {
 
-    // Get the Conversion Rate from Currency One to Currency Two
-    const conversionRate = data.conversion_rate;
-    // update the DOM to display the Conversion Rate
+//     // Get the Conversion Rate from Currency One to Currency Two
+//     const conversionRate = data.conversion_rate;
+//     // update the DOM to display the Conversion Rate
     
-    rate.innerText = `1 ${currencyOnecode} = ${(conversionRate).toFixed(2)} ${currencyTwocode} `;
-    // Formatting currency Two Amount
-    const amount2 = new Intl.NumberFormat('en-US', { style: 'currency', currency: currencyTwocode }).format((amountCurrencyOne.value * conversionRate).toFixed(2))
-    // Update the currency Two Amount
-    amountCurrencyTwo.value= amount2;
-});
+//     rate.innerText = `1 ${currencyOnecode} = ${(conversionRate).toFixed(2)} ${currencyTwocode} `;
+//     // Formatting currency Two Amount
+//     const amount2 = new Intl.NumberFormat('en-US', { style: 'currency', currency: currencyTwocode }).format((amountCurrencyOne.value * conversionRate).toFixed(2))
+//     // Update the currency Two Amount
+//     amountCurrencyTwo.value= amount2;
+// });
 
     rate.innerText ='1 PKR = 16.79 UGX'
 

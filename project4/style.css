@@ -52,7 +52,7 @@ p {
 
 .fa-retweet {
     color: whitesmoke;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
 }
 
 .fa-gg-circle {
@@ -76,7 +76,7 @@ li a{
 }
 
 .currency {
-    padding: 40px 0;
+    padding: 30px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -87,6 +87,11 @@ li a{
     font-size: 16px;
     background: transparent;
     border: 1px solid gray;
+    font-weight: 600;
+}
+.currency select option{
+    background-color: lightgray;
+    
 }
 
 .currency input {
@@ -125,7 +130,7 @@ button:focus {
     outline: 0;
 }
 
-/* Responsiveness */
+/* Responsiveness for medium screens*/
 @media only screen and (max-width: 750px) {
 
     .currency {
@@ -142,3 +147,51 @@ button:focus {
     }
 
 }
+
+@media only screen and (max-width: 600px) {
+    
+    h1{
+        text-align: center;
+        font-size: 22px;
+        font-weight: 700 ;
+    }
+    p{
+       text-align: center; 
+       font-size: 13px;
+       margin-top: 8px;
+    }
+    .currency{
+        padding: 15px 0;
+    }
+
+    .currency input {
+        font-size: 20px;
+        margin-top: 15px;
+    
+    }
+    .currency select{
+        font-size:15px;
+        width: 270px;
+        
+    }
+    .currency select option{
+        font-size: 12px;
+        /* width: 100px; */
+        background-color: lightgray;
+        font-weight: 600;
+        
+    }
+    .rate{
+        font-size: 15px;
+        padding: 0 8px;
+    }
+    .btn{
+        font-size: 13px;
+    }
+    .fa-retweet{
+        font-size: 0.9rem;
+    }
+
+
+}
+
