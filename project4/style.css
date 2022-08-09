@@ -153,9 +153,9 @@ button:focus {
 
 @media only screen and (max-width: 600px) {
 
-    .navbar-brand i {
+    /* .navbar-brand i {
         font-size: 1.4rem;
-    }
+    } */
 
     button.navbar-toggler {
   
