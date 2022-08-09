@@ -63,7 +63,7 @@ body {
 
 .movie-container select option {
     font-weight: 700;
-    
+
 }
 
 
@@ -160,15 +160,26 @@ p.text span {
     color: aqua;
 }
 
-.seatnumm{
+.seatnumm {
     border: 3px solid white;
-    padding:5px 10px;
-    margin-top: 15px;
+    padding: 5px 10px;
+    margin-top: 25px;
     width: 320px;
-     
-    
+    height: 30vh;
+    overflow-y: scroll;
 }
-pre{
-    color:white;
-    font-weight:bolder;
+.seatnumm::-webkit-scrollbar {
+    width: 1em;
+}
+.seatnumm::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.seatnumm::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+div.selected.list {
+    margin-top: 5px;
+
 }

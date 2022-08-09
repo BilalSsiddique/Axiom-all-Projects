@@ -18,13 +18,22 @@ function updateselectedcount() {
     count.innerText = seatCount;
     total.innerText = seatCount * ticketPrice;
     localStorage.setItem('selectedSeats', JSON.stringify(seatsindex));
+    let data = "";
+    // const unseats = Array()
+    // for (const value of selectedSeats.values()) {
+    //     unseats.push(+value.innerHTML)
+    // }
 
     const unseats = Array()
     for (const value of selectedSeats.values()) {
-        unseats.push(+value.innerHTML)
+        data += `<div class="seat selected list">
+                    ${+value.innerHTML}
+                </div>`
     }
     // console.log(unseats)
-    seatNumber.innerHTML = JSON.stringify(unseats, null, seatCount)
+
+
+    seatNumber.innerHTML = data;
 
 };
 
