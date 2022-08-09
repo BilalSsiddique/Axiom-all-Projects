@@ -59,13 +59,15 @@ p {
     font-size: 1.9rem;
 
 }
-li a{
+
+li a {
     /* color: darkgreen  !important; */
-    font-weight: 600  !important;
-    font-family:sans-serif;
-    
+    font-weight: 600 !important;
+    font-family: sans-serif;
+
 }
-#navbarScroll{
+
+#navbarScroll {
     margin-left: 60px;
 }
 
@@ -89,9 +91,10 @@ li a{
     border: 1px solid gray;
     font-weight: 600;
 }
-.currency select option{
+
+.currency select option {
     background-color: lightgray;
-    
+
 }
 
 .currency input {
@@ -149,18 +152,29 @@ button:focus {
 }
 
 @media only screen and (max-width: 600px) {
-    
-    h1{
+
+    .navbar-brand i {
+        font-size: 1.4rem;
+    }
+
+    button.navbar-toggler {
+  
+        font-size: 1.0rem;
+    }
+
+    h1 {
         text-align: center;
         font-size: 22px;
-        font-weight: 700 ;
+        font-weight: 700;
     }
-    p{
-       text-align: center; 
-       font-size: 13px;
-       margin-top: 8px;
+
+    p {
+        text-align: center;
+        font-size: 13px;
+        margin-top: 8px;
     }
-    .currency{
+
+    .currency {
         padding: 15px 0;
     }
 
@@ -168,32 +182,36 @@ button:focus {
         font-size: 17px;
         margin-top: 15px;
         width: 270px;
-        
-    
+
+
     }
-    .currency select{
-        font-size:15px;
+
+    .currency select {
+        font-size: 15px;
         width: 270px;
-        
+
     }
-    .currency select option{
+
+    .currency select option {
         font-size: 12px;
         /* width: 100px; */
         background-color: lightgray;
         font-weight: 600;
-        
+
     }
-    .rate{
+
+    .rate {
         font-size: 15px;
         padding: 0 8px;
     }
-    .btn{
+
+    .btn {
         font-size: 13px;
     }
-    .fa-retweet{
+
+    .fa-retweet {
         font-size: 0.9rem;
     }
 
 
 }
-
