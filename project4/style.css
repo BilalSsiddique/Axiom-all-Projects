@@ -127,6 +127,16 @@ li a {
 
 }
 
+#table-body {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.contain {
+    height: 50vh;
+    overflow-y: scroll;
+}
+
 select:focus,
 input:focus,
 button:focus {
@@ -158,7 +168,7 @@ button:focus {
     } */
 
     button.navbar-toggler {
-  
+
         font-size: 1.0rem;
     }
 
