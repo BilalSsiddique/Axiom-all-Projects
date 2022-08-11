@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins',
+    sans-serif;
+}
+
+body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin:0; 
+}
+.container{
+    display:flex;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 800px;
+
+}
+aside{
+    padding: 10px 20px;
+    width: 250px;
+    border-right:1px solid #2f3640;
+}
+
+button{
+    cursor: pointer;
+    background: black;
+    border: 1px solid #2f3640;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom:20px;
+    font-weight: bold;
+    font-size: 15px;
+    color:white;
+    
+}
+
+main{
+    flex:1;
+    padding: 10px 20px;
+}
+.headings{
+    width: 750px;
+    max-width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+}
+h1{
+    background-color: black;
+    color: white;
+    font-weight: 900;
+}
+
+table{
+    margin: 0;
+}
+.contain {
+    height: 50vh;
+    overflow-y: scroll;
+        width: 485px;
+        max-width: 100%;
+        overflow-x: hidden;
+}
+
+.contain::-webkit-scrollbar {
+    width: 0.7em;
+}
+
+.contain::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.contain::-webkit-scrollbar-thumb {
+    background-color: black;
+    outline: 1px solid black;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    button{
+        font-size: 13px;
+        padding: 5px;
+    }
+    aside{
+        padding:5px;
+        margin: 0px;
+    }
+    .container{
+        padding: 0px;
+    }
+    td {
+        font-size: 13px;
+    }
+    table {
+        margin: 5px 8px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .contain::-webkit-scrollbar {
+        width: 0.5em;
+    }
+    
+}
