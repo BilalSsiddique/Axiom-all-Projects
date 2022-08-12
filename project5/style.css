@@ -1,35 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     font-family: 'Poppins',
-    sans-serif;
+        sans-serif;
 }
 
-body{
+body {
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    margin:0; 
+    margin: 0;
 }
-.container{
-    display:flex;
+
+.container {
+    display: flex;
     padding: 20px;
     margin: 0 auto;
     max-width: 100%;
     width: 800px;
 
 }
-aside{
+
+aside {
     padding: 10px 20px;
     width: 250px;
-    border-right:1px solid #2f3640;
+    border-right: 1px solid #2f3640;
 }
 
-button{
+button {
     cursor: pointer;
     background: black;
     border: 1px solid #2f3640;
@@ -37,38 +39,48 @@ button{
     display: block;
     width: 100%;
     padding: 5px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     font-weight: bold;
     font-size: 15px;
-    color:white;
-    
+    color: white;
+
 }
 
-main{
-    flex:1;
+main {
+    flex: 1;
     padding: 10px 20px;
 }
-.headings{
+
+.headings {
     width: 750px;
     max-width: 100%;
     padding: 10px 20px;
     text-align: center;
 }
-h1{
+
+h1 {
     background-color: black;
     color: white;
     font-weight: 900;
 }
 
-table{
+table {
     margin: 0;
 }
+#tab{
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
 .contain {
     height: 50vh;
     overflow-y: scroll;
-        width: 485px;
-        max-width: 100%;
-        overflow-x: hidden;
+    width: 485px;
+    max-width: 100%;
+    overflow-x: hidden;
+
 }
 
 .contain::-webkit-scrollbar {
@@ -89,29 +101,61 @@ table{
 
 @media only screen and (max-width: 600px) {
 
-    button{
+    button {
         font-size: 13px;
         padding: 5px;
     }
-    aside{
-        padding:5px;
+
+    aside {
+        padding: 5px;
         margin: 0px;
     }
-    .container{
+
+    .container {
         padding: 0px;
     }
+
     td {
         font-size: 13px;
     }
+
     table {
         margin: 5px 8px;
     }
 
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
     .contain::-webkit-scrollbar {
         width: 0.5em;
     }
-    
+
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    aside {
+        border-right: none;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5px;
+
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+}
+
+
+@media only screen and (max-width: 300px) {
+    aside {
+        grid-template-columns: 1fr;
+    }
+    button{
+        margin-bottom: 8px;
+    }
+
 }
