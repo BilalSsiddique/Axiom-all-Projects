@@ -557,6 +557,9 @@ h2 {
     .img-description p {
         font-size: 12px;
     }
+    .servicess h1{
+        font-size: 21px;
+    }
 }
 
 @media only screen and (max-width:405px) {
@@ -587,6 +590,27 @@ h2 {
         padding: 5px 8px;
         font-size: 14px;
     }
-
+    /* Services section */
+        #image-con1,
+        #image-con2,
+        #image-con3,
+        #image-con4,
+        #image-con5,
+        #image-con6,
+        #image-con7,
+        #image-con8 {
+            width: 110px !important;
+            height: 110px !important;
+        }
+    
+        div.img-heading h4 {
+            font-size: 16px;
+        }
+    
+        .img-description p {
+            font-size: 11px;
+        }
+    
+        
 
 }
