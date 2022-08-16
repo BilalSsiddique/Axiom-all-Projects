@@ -537,12 +537,33 @@ h2 {
         justify-content: center;
         margin: 0 auto;
     }
+
+    #image-con1,
+    #image-con2,
+    #image-con3,
+    #image-con4,
+    #image-con5,
+    #image-con6,
+    #image-con7,
+    #image-con8 {
+        width: 120px !important;
+        height: 120px !important;
+    }
+
+    div.img-heading h4 {
+        font-size: 17px;
+    }
+
+    .img-description p {
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width:405px) {
     .carousel-caption h1 {
-            font-size: 22px;
-        }
+        font-size: 22px;
+    }
+
     .carousel-captions-search {
         width: 300px;
         padding: 3px 0px;
@@ -561,10 +582,11 @@ h2 {
     .carousel-captions-search div button {
         padding: 0px 3px;
     }
-    .carousel-caption button{
+
+    .carousel-caption button {
         padding: 5px 8px;
         font-size: 14px;
-}
+    }
 
 
 }
