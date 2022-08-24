@@ -428,6 +428,48 @@ h2 {
     font-size: 13px;
 }
 
+/* Book services */
+
+.serv-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #c0930c;
+    padding-top: 18px;
+}
+
+.video-el {
+    padding: 0px 50px;
+}
+
+.video-el video {
+    border-radius: 15px;
+}
+
+/* Footer */
+
+.connect {
+    background-color: black;
+}
+
+.foo {
+    font-size: 19px;
+    border-radius: 50%;
+    border: 2px solid grey;
+    /* background-color: black; */
+    color: gray;
+    padding: 2px;
+}
+
+
+.social-icons {
+    font-size: 15px;
+}
+
+
+
+
+
 /* Carousel Responsiveness */
 @media only screen and (max-width:900px) {
     .services {
@@ -473,6 +515,18 @@ h2 {
         padding: 2px 15px;
 
     }
+}
+
+@media only screen and (max-width:630px) {
+
+    /* footer */
+    .email {
+        display: block;
+        margin-top: 15px;
+
+    }
+
+
 }
 
 @media only screen and (max-width:580px) {
@@ -523,6 +577,35 @@ h2 {
         margin-right: 180px;
     }
 
+    /* modal */
+    .containerrr {
+        /* height: 10vh; */
+        width: 250px;
+        bottom: 15px;
+    }
+    .form {
+        padding: 5px 20px;
+    }
+    .form-controls {
+        margin-bottom: 5px;
+        padding-bottom: 10px;
+        position: relative;
+    }
+    .form-controls label {
+        color: #777;
+        display: block;
+        margin-bottom: 2px;
+        font-size: 14px;
+    }
+    .form button {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        font-size: 13px;
+    }
+
+
+
 
 
 }
@@ -557,7 +640,8 @@ h2 {
     .img-description p {
         font-size: 12px;
     }
-    .servicess h1{
+
+    .servicess h1 {
         font-size: 21px;
     }
 }
@@ -590,27 +674,28 @@ h2 {
         padding: 5px 8px;
         font-size: 14px;
     }
+
     /* Services section */
-        #image-con1,
-        #image-con2,
-        #image-con3,
-        #image-con4,
-        #image-con5,
-        #image-con6,
-        #image-con7,
-        #image-con8 {
-            width: 110px !important;
-            height: 110px !important;
-        }
-    
-        div.img-heading h4 {
-            font-size: 16px;
-        }
-    
-        .img-description p {
-            font-size: 11px;
-        }
-    
-        
+    #image-con1,
+    #image-con2,
+    #image-con3,
+    #image-con4,
+    #image-con5,
+    #image-con6,
+    #image-con7,
+    #image-con8 {
+        width: 110px !important;
+        height: 110px !important;
+    }
+
+    div.img-heading h4 {
+        font-size: 16px;
+    }
+
+    .img-description p {
+        font-size: 11px;
+    }
+
+
 
 }
