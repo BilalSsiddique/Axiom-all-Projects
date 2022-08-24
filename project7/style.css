@@ -602,7 +602,7 @@ h2 {
     }
 
     .form-controls input {
-        min-width: 200px !important;
+        width: 100px !important;
         background-color: black;
         color: white;
     }
