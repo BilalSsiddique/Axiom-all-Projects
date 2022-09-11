@@ -26,7 +26,9 @@ Event Management Theme
 Live at: https://bilal-siddiqueprojects.netlify.app/project7/index.html
 
 ![image](https://user-images.githubusercontent.com/64930024/189537567-09d175e3-cd6b-43f4-baae-a8bb3521ffdc.png)
-![image](https://user-images.githubusercontent.com/64930024/189537809-617a188d-f817-4abc-a8b9-e5c23710c056.png)
+
+![main](https://user-images.githubusercontent.com/64930024/189538029-fe4b51ed-3e6d-45e4-9a7e-006cc8b1e369.png)
+
 ![image](https://user-images.githubusercontent.com/64930024/189537740-1f4e4389-9ba0-4a39-a2d1-2a7fa5cb82a9.png)
 
 Project 01
