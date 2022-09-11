@@ -1,8 +1,4 @@
 # PIAIC Axiom Projects
-Project 01
-Sign Up Form 
-Live at: https://bilal-siddiqueprojects.netlify.app/project1/index.html
-![axiom01](https://user-images.githubusercontent.com/64930024/170840203-8b094e91-4cf8-42ad-8abc-43e1ca764ec5.png)
 
 Project 02
 Movie Ticket Selection 
@@ -34,5 +30,9 @@ Live at: https://bilal-siddiqueprojects.netlify.app/project7/index.html
 
 ![image](https://user-images.githubusercontent.com/64930024/189537740-1f4e4389-9ba0-4a39-a2d1-2a7fa5cb82a9.png)
 
+Project 01
+Sign Up Form 
+Live at: https://bilal-siddiqueprojects.netlify.app/project1/index.html
+![axiom01](https://user-images.githubusercontent.com/64930024/170840203-8b094e91-4cf8-42ad-8abc-43e1ca764ec5.png)
 
 
